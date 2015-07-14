@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0I0-Xs-j62">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xM9-B3-0kV">
+            <objects>
+                <navigationController id="0I0-Xs-j62" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ykZ-RG-qQa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DeO-5p-RWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0G-V2-y1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-705" y="32"/>
+        </scene>
+        <!--Voronoi Chart-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VoronoiChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r7H-zq-QjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGb-Fr-CJb"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="DGt-Hm-mY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oOa-jr-2wu" customClass="VoronoiChartView" customModule="VoronoiChart" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="345" height="344"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oOa-jr-2wu" secondAttribute="height" multiplier="1:1" constant="1" id="Bj6-84-g5t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oOa-jr-2wu" firstAttribute="top" secondItem="DGt-Hm-mY9" secondAttribute="top" constant="15" id="9m0-t6-9Yn"/>
+                            <constraint firstAttribute="bottom" secondItem="oOa-jr-2wu" secondAttribute="bottom" constant="15" id="Cua-3Q-P8l"/>
+                            <constraint firstItem="oOa-jr-2wu" firstAttribute="width" secondItem="DGt-Hm-mY9" secondAttribute="width" constant="-30" id="Ojl-kY-MdV"/>
+                            <constraint firstAttribute="trailing" secondItem="oOa-jr-2wu" secondAttribute="trailing" constant="15" id="j4m-ev-kkF"/>
+                            <constraint firstItem="oOa-jr-2wu" firstAttribute="leading" secondItem="DGt-Hm-mY9" secondAttribute="leading" constant="15" id="qok-mp-Yyi"/>
+                        </constraints>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Voronoi Chart" id="jiM-6f-fv1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="vD5-HS-Zcp">
+                            <connections>
+                                <action selector="generatePacking" destination="BYZ-38-t0r" id="0Lb-VX-PCq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="voronoiChartView" destination="oOa-jr-2wu" id="g0S-tw-Eo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

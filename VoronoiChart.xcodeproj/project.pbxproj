@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020BC76B1B552FA0008A02CD /* VoronoiChartDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020BC76A1B552FA0008A02CD /* VoronoiChartDrawing.swift */; };
+		020BC76D1B5532E7008A02CD /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020BC76C1B5532E7008A02CD /* CGExtensions.swift */; };
+		020BC7711B5540E2008A02CD /* MoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020BC7701B5540E2008A02CD /* MoodType.swift */; };
+		020BC7731B5540EE008A02CD /* MoodTypeGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020BC7721B5540EE008A02CD /* MoodTypeGraphics.swift */; };
+		0221C1AF20A2B81B005626B7 /* VoronoiChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221C1AE20A2B81B005626B7 /* VoronoiChartView.swift */; };
+		0221C1B120A4A60F005626B7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0221C1B020A4A60F005626B7 /* Launch Screen.storyboard */; };
+		0221C1B320A4A7A1005626B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0221C1B220A4A7A1005626B7 /* Main.storyboard */; };
+		029C80391B54FECC0005D35A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C80381B54FECC0005D35A /* AppDelegate.swift */; };
+		029C803B1B54FECC0005D35A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C803A1B54FECC0005D35A /* ViewController.swift */; };
+		029C80401B54FECC0005D35A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029C803F1B54FECC0005D35A /* Images.xcassets */; };
+		029C80591B54FEE70005D35A /* CirclePacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C80581B54FEE70005D35A /* CirclePacking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020BC76A1B552FA0008A02CD /* VoronoiChartDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoronoiChartDrawing.swift; sourceTree = "<group>"; };
+		020BC76C1B5532E7008A02CD /* CGExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGExtensions.swift; sourceTree = "<group>"; };
+		020BC7701B5540E2008A02CD /* MoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodType.swift; sourceTree = "<group>"; };
+		020BC7721B5540EE008A02CD /* MoodTypeGraphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodTypeGraphics.swift; sourceTree = "<group>"; };
+		0221C1AE20A2B81B005626B7 /* VoronoiChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoronoiChartView.swift; sourceTree = "<group>"; };
+		0221C1B020A4A60F005626B7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0221C1B220A4A7A1005626B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		029C80331B54FECC0005D35A /* VoronoiChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoronoiChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		029C80371B54FECC0005D35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029C80381B54FECC0005D35A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		029C803A1B54FECC0005D35A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		029C803F1B54FECC0005D35A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		029C80581B54FEE70005D35A /* CirclePacking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePacking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		029C80301B54FECC0005D35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029C802A1B54FECC0005D35A = {
+			isa = PBXGroup;
+			children = (
+				029C80351B54FECC0005D35A /* VoronoiChart */,
+				029C80341B54FECC0005D35A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		029C80341B54FECC0005D35A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				029C80331B54FECC0005D35A /* VoronoiChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		029C80351B54FECC0005D35A /* VoronoiChart */ = {
+			isa = PBXGroup;
+			children = (
+				029C80381B54FECC0005D35A /* AppDelegate.swift */,
+				020BC76C1B5532E7008A02CD /* CGExtensions.swift */,
+				029C80581B54FEE70005D35A /* CirclePacking.swift */,
+				029C803F1B54FECC0005D35A /* Images.xcassets */,
+				029C80371B54FECC0005D35A /* Info.plist */,
+				0221C1B020A4A60F005626B7 /* Launch Screen.storyboard */,
+				0221C1B220A4A7A1005626B7 /* Main.storyboard */,
+				020BC7701B5540E2008A02CD /* MoodType.swift */,
+				020BC7721B5540EE008A02CD /* MoodTypeGraphics.swift */,
+				029C803A1B54FECC0005D35A /* ViewController.swift */,
+				020BC76A1B552FA0008A02CD /* VoronoiChartDrawing.swift */,
+				0221C1AE20A2B81B005626B7 /* VoronoiChartView.swift */,
+			);
+			path = VoronoiChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		029C80321B54FECC0005D35A /* VoronoiChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 029C80521B54FECC0005D35A /* Build configuration list for PBXNativeTarget "VoronoiChart" */;
+			buildPhases = (
+				029C802F1B54FECC0005D35A /* Sources */,
+				029C80301B54FECC0005D35A /* Frameworks */,
+				029C80311B54FECC0005D35A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoronoiChart;
+			productName = VoronoiChart;
+			productReference = 029C80331B54FECC0005D35A /* VoronoiChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		029C802B1B54FECC0005D35A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Fueled;
+				TargetAttributes = {
+					029C80321B54FECC0005D35A = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 42K69GXVAS;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 029C802E1B54FECC0005D35A /* Build configuration list for PBXProject "VoronoiChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 029C802A1B54FECC0005D35A;
+			productRefGroup = 029C80341B54FECC0005D35A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				029C80321B54FECC0005D35A /* VoronoiChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		029C80311B54FECC0005D35A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0221C1B320A4A7A1005626B7 /* Main.storyboard in Resources */,
+				0221C1B120A4A60F005626B7 /* Launch Screen.storyboard in Resources */,
+				029C80401B54FECC0005D35A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		029C802F1B54FECC0005D35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029C803B1B54FECC0005D35A /* ViewController.swift in Sources */,
+				029C80591B54FEE70005D35A /* CirclePacking.swift in Sources */,
+				0221C1AF20A2B81B005626B7 /* VoronoiChartView.swift in Sources */,
+				020BC7711B5540E2008A02CD /* MoodType.swift in Sources */,
+				020BC76B1B552FA0008A02CD /* VoronoiChartDrawing.swift in Sources */,
+				029C80391B54FECC0005D35A /* AppDelegate.swift in Sources */,
+				020BC7731B5540EE008A02CD /* MoodTypeGraphics.swift in Sources */,
+				020BC76D1B5532E7008A02CD /* CGExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		029C80501B54FECC0005D35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		029C80511B54FECC0005D35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		029C80531B54FECC0005D35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 42K69GXVAS;
+				INFOPLIST_FILE = VoronoiChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fueled.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		029C80541B54FECC0005D35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 42K69GXVAS;
+				INFOPLIST_FILE = VoronoiChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fueled.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		029C802E1B54FECC0005D35A /* Build configuration list for PBXProject "VoronoiChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029C80501B54FECC0005D35A /* Debug */,
+				029C80511B54FECC0005D35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		029C80521B54FECC0005D35A /* Build configuration list for PBXNativeTarget "VoronoiChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				029C80531B54FECC0005D35A /* Debug */,
+				029C80541B54FECC0005D35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 029C802B1B54FECC0005D35A /* Project object */;
+}
