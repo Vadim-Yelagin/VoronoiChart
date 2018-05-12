@@ -4,17 +4,16 @@
 import CoreGraphics
 
 extension CGFloat {
-	var squared: CGFloat {
-		return self * self
-	}
-}
-
-extension CGVector {
-    
     var squared: CGFloat {
         return self * self
     }
-    
+}
+
+extension CGVector {
+    var squared: CGFloat {
+        return self * self
+    }
+
     var length: CGFloat {
         return sqrt(self.squared)
     }
@@ -27,10 +26,9 @@ extension CGVector {
         }
     }
 
-	var orthogonal: CGVector {
-		return CGVector(dx: -self.dy, dy: self.dx)
-	}
-
+    var orthogonal: CGVector {
+        return CGVector(dx: -self.dy, dy: self.dx)
+    }
 }
 
 func + (a: CGVector, b: CGVector) -> CGVector {
